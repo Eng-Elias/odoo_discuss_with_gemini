@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_gemini_discuss_integration_gemini_discuss_integration,gemini_discuss_integration.gemini_discuss_integration,model_gemini_discuss_integration_gemini_discuss_integration,base.group_user,1,1,1,1
+gemini_discuss_integration.access_gemini_model,gemini_discuss_integration.access_gemini_model,gemini_discuss_integration.model_gemini_model,base.group_user,1,1,1,1

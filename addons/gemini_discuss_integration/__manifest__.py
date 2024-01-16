@@ -1,34 +1,40 @@
 # -*- coding: utf-8 -*-
+# Copyright (c) 2024-Present Elias Owis. (<https://engelias.website//>)
+
 {
     'name': "gemini_discuss_integration",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Gemini Integration with Discuss App",
 
     'description': """
-Long description of module's purpose
+        Supercharge your Odoo and Discuss with "Gemini Integration"! \
+        This magical module lets you chat with Gemini, a brainy AI, right from your familiar interface. \
+        Need a creative nudge for that email? Just ask Gemini! Want to spin out social posts in seconds? \
+        Gemini's your genie. Get things done faster, smarter, and with a dash of AI magic. \
+        Free API key with limits (60 queries/minute), but with enough power to boost productivity and open doors to \
+        limitless possibilities. Unleash the AI within and watch your Discuss and Odoo shine!
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
+    'author': "Elias Owis",
+    'website': "https://engelias.website",
     'category': 'Uncategorized',
     'version': '0.1',
 
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'base_setup', 'mail'],
+    'external_dependencies': {'python': ['google-generativeai']},
 
-    # always loaded
+    'license': 'LGPL-3',
+    'maintainer': 'Elias Owis',
+
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        'data/gemini_model_data.xml',
+        'data/mail_channel_data.xml',
+        'data/user_partner_data.xml',
+        'views/res_config_settings_views.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'images': [],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
 }
-

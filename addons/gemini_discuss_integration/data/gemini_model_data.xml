@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="gemini-pro" model="gemini.model">
+            <field name="name">gemini-pro</field>
+        </record>
+        <record id="gemini-pro-vision" model="gemini.model">
+            <field name="name">gemini-pro-vision</field>
+        </record>
+    </data>
+</odoo>
