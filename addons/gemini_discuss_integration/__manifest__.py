@@ -33,7 +33,11 @@
         'data/user_partner_data.xml',
         'views/res_config_settings_views.xml',
     ],
-    'images': [],
+    'images': [
+        'static/description/odoo_gemini_cover.png',
+        'static/description/updated_discuss_ui.png',
+        'static/description/text_images_to_text.png',
+    ],
     'installable': True,
     'application': False,
     'auto_install': False,
